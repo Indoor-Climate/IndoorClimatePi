@@ -5,3 +5,4 @@
 '''
 sudo make
 '''
+test
