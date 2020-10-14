@@ -1,0 +1,2 @@
+0 7 * * * curl -s -X POST -H "Content-Type: application/json" -d '{"username": "Aud", "content": "I work! :D"}' "https://discordapp.com/api/webhooks/764178702887813193/Z7fVk5Arvtn0nDfoY8ktKephmRMFaL2pjL6kk76jU_KoNgG_7-FEd-OHdafOYrcWg1BH"
+0 2 * * * /home/mikkelfj/IndoorClimatePi/update.sh
