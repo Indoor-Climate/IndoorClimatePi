@@ -1,3 +1,7 @@
 # IndoorClimatePi
 
-## test
+## Setup
+
+´´´
+sudo make
+´´´
