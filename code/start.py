@@ -2,7 +2,7 @@
 
 import time
 
-time.sleep(500)
+time.sleep(1)
 
 print("Start here!")
 
