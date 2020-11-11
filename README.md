@@ -4,7 +4,7 @@
 
 Clone repo to Raspberry Pi and open folder
 ```bash
-git clone https://github.com/MikkelFilip/IndoorClimatePi.git && cd IndoorClimatePi/
+git clone https://github.com/Indoor-Climate/IndoorClimatePi.git && cd IndoorClimatePi/
 ```
 Change config
 ```bash
