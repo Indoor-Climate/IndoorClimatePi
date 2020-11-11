@@ -16,4 +16,4 @@ jobs:
     - name: make
       run: sudo make
     - name: makeC
-     run: sudo ./code make  
+      run: sudo ./code make  
