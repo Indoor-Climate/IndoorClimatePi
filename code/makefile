@@ -1,10 +1,10 @@
-all: hello.exe
+all: start.exe
 
-hello.o: start.c
+start.o: start.c
 	 gcc -c start.c
 	 
-hello.exe: hello.o
-	 gcc -o hello.exe hello.o
+start.exe: start.o
+	 gcc -o start.exe start.o
      
 clean:
-	 rm hello.o hello.exe
+	 rm start.o start.exe
