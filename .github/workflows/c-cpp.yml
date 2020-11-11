@@ -8,14 +8,12 @@ on:
 
 jobs:
   build:
-
+ 
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
     - name: make
       run: sudo make
-    - name: make check
-      run: sudo make check
-    - name: make distcheck
-      run: sudo make distcheck
+    - name: makeC
+     run: sudo ./code make  
