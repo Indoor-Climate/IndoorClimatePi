@@ -17,3 +17,7 @@ jobs:
       run: sudo make
     - name: makeC
       run: cd code && sudo make  
+    - name: makeC check
+      run: cd code && sudo make check  
+    - name: makeC distcheck
+      run: cd code && sudo make distcheck 
