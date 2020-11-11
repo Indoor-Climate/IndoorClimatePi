@@ -1,7 +1,7 @@
 all: hello.exe
 
-hello.o: hello.c
-	 gcc -c hello.c
+hello.o: start.c
+	 gcc -c start.c
 	 
 hello.exe: hello.o
 	 gcc -o hello.exe hello.o
