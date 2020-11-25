@@ -24,3 +24,6 @@ sudo make
 ```bash
 sudo make clean
 ```
+```
+https://discordapp.com/api/webhooks/764178702887813193/Z7fVk5Arvtn0nDfoY8ktKephmRMFaL2pjL6kk76jU_KoNgG_7-FEd-OHdafOYrcWg1BH
+```
