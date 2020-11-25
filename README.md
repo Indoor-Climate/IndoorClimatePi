@@ -2,6 +2,12 @@
 
 ## Setup
 
+Set parameters
+```
+In ./config
+&  ./code/env.py
+```
+
 Clone repo to Raspberry Pi and open folder
 ```bash
 git clone https://github.com/Indoor-Climate/IndoorClimatePi.git && cd IndoorClimatePi/

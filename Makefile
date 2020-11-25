@@ -4,10 +4,11 @@ generate:
 	@echo "Copying Files..."
 	@cp ../IndoorClimatePi/ /opt/ -r
 	@cp IndoorClimatePid.service /etc/systemd/system/
-	@systemctl enable IndoorClimatePid.service
-	@systemctl start IndoorClimatePid.service
 	@./cronfile.sh
 	@crontab cronfile
+	@cd /opt/IndoorClimatePi/code && ./make.sh
+	@systemctl enable IndoorClimatePid.service
+	@systemctl start IndoorClimatePid.service
 
 update:
 	@echo "Updating..."

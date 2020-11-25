@@ -31,13 +31,13 @@
 #define DESTZONE "TZ=Europe/Berlin"
 #define temp_offset (5.0f)
 #define sample_rate_mode (BSEC_SAMPLE_RATE_LP)
-#define INTERVAL_IN_MIN 15
+#define INTERVAL_IN_MIN 1
 #define URL "https://discordapp.com/api/webhooks/764178702887813193/Z7fVk5Arvtn0nDfoY8ktKephmRMFaL2pjL6kk76jU_KoNgG_7-FEd-OHdafOYrcWg1BH"
 
 int g_i2cFid; // I2C Linux device handle
 int i2c_address = BME680_I2C_ADDR_PRIMARY;
-char *filename_state = "bsec_iaq.state";
-char *filename_config = "bsec_iaq.config";
+char *filename_state = "/opt/IndoorClimatePi/code/bsec_iaq.state";
+char *filename_config = "/opt/IndoorClimatePi/code/bsec_iaq.config";
 int64_t target = 0;
 
 /* functions */
@@ -170,10 +170,10 @@ char * makeRequest(float co2, float humidity, float temperature){
 	char *msg;
 	int n;
 
-	n = snprintf(NULL, 0, "./sendinfo.py %.15f %.2f %.2f", co2, humidity, temperature);
+	n = snprintf(NULL, 0, "/opt/IndoorClimatePi/code/sendinfo.py %.15f %.2f %.2f", co2, humidity, temperature);
 	
 	msg = malloc(n + 1);
-	n = snprintf(msg, n + 1, "./sendInfo.py %.15f %.2f %.2f", co2, humidity, temperature);
+	n = snprintf(msg, n + 1, "/opt/IndoorClimatePi/code/sendInfo.py %.15f %.2f %.2f", co2, humidity, temperature);
 	return msg;
 }
 
