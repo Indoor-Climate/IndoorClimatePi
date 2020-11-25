@@ -31,7 +31,7 @@
 #define DESTZONE "TZ=Europe/Berlin"
 #define temp_offset (5.0f)
 #define sample_rate_mode (BSEC_SAMPLE_RATE_LP)
-#define INTERVAL_IN_MIN 1
+#define INTERVAL_IN_MIN 15
 #define URL "https://discordapp.com/api/webhooks/764178702887813193/Z7fVk5Arvtn0nDfoY8ktKephmRMFaL2pjL6kk76jU_KoNgG_7-FEd-OHdafOYrcWg1BH"
 
 int g_i2cFid; // I2C Linux device handle
