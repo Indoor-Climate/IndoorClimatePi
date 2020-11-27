@@ -217,11 +217,7 @@ void output_ready(int64_t timestamp, float iaq, uint8_t iaq_accuracy,
 
   if(target < get_timestamp_us()){
   	target = INTERVAL_IN_MIN * 60000000 + get_timestamp_us();
-	//#######################################################################################################################
-	//Code For sending info here!!!!
-	//#######################################################################################################################
 	char *request = makeRequest(co2_equivalent, humidity, temperature);
-	//printf(request);
 	system(request);
 	free(request);	
   }
