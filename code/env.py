@@ -1,5 +1,4 @@
-url = 'indoorclimate.tk'
+url = 'api.indoorclimate.tk'
 path = '/model/Measurement'
-PORT = '3000'
 cache = "cache"
 SensorId = 
