@@ -17,7 +17,7 @@ data = {
 } 
 
 try:
-	r = requests.post("https://" + url + ":" + PORT + path, data=data, verify=False)
+	r = requests.post("https://" + url + path, data=data, verify=False)
 except requests.exceptions.RequestException as e:
 	print(e)
 	f = open(cache, "a+")
