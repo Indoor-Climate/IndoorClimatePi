@@ -28,6 +28,7 @@ sudo make clean
 https://discordapp.com/api/webhooks/764178702887813193/Z7fVk5Arvtn0nDfoY8ktKephmRMFaL2pjL6kk76jU_KoNgG_7-FEd-OHdafOYrcWg1BH
 ```
 ## Navigation guide
+```
 .
 ├── code
 │   ├── bsec_bme680.c:              The C code from alexh modifiede according to
@@ -53,3 +54,4 @@ https://discordapp.com/api/webhooks/764178702887813193/Z7fVk5Arvtn0nDfoY8ktKephm
 |                                   and a script to clean it
 |
 └── README.md:                      This File
+```
